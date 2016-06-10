@@ -21,7 +21,7 @@ require_once($settings);
 
 global $CONFIG;
 
-$url = urldecode($_GET['url']);
+$url = $_GET['url'];
 $token = $_GET['token'];
 
 if ($CONFIG->image_proxy_secret) {
